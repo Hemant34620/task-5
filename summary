@@ -1,0 +1,38 @@
+ Wireshark Packet Capture – Summary
+I used Wireshark on a Windows system to capture and analyze network traffic over a Wi-Fi interface.
+
+🔹 Steps Performed:
+Installed Wireshark with default settings (including Npcap).
+
+Started packet capture on the active Wi-Fi interface.
+
+Generated traffic by:
+
+Visiting websites (like Google and Wikipedia)
+
+Running ping google.com from Command Prompt
+
+Stopped the capture after 1 minute.
+
+Applied protocol filters (dns, http, tcp) to analyze traffic.
+
+Exported the capture file as capture1.pcap.
+
+🔹 Protocols Identified:
+Protocol	Purpose
+DNS	Resolves domain names to IP addresses
+HTTP	Transfers web data (like GET requests)
+TCP	Handles transport of data (connection establishment)
+(Bonus) ICMP	Used by the ping command
+(Bonus) TLS	Secure encrypted HTTPS traffic
+
+🔹 Observations:
+DNS queries were sent to 8.8.8.8 (Google DNS).
+
+HTTP packets clearly showed GET requests to visited sites.
+
+TCP packets included SYN, ACK for connection setup.
+
+Secure sites used TLS instead of HTTP.
+
+Exported .pcap file for further analysis or sharing.
